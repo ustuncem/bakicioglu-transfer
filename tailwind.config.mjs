@@ -48,7 +48,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        primary: ['Josefin Sans', 'sans-serif'],
+        primary: ['Montserrat', 'sans-serif'],
       },
     },
   },
