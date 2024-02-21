@@ -8,7 +8,7 @@ export default function Navigation() {
   const [show, setShow] = useState<boolean>(false);
   // const toggleNavigation = useCallback(() => setShow(prev => !prev), []);
   return (
-    <nav className="fixed top-0 left-0 w-full h-[100vh] pt-6 inline-block transition-all ">
+    <nav className="fixed  top-0 left-0 w-full h-[100vh]  inline-block transition-all visible opacity-100 z-[9999999] bg-black/90">
       <div className="fixed pt-[30px] pb-[50px] pl-4 h-full bg-[#1e1e1e]  z-[100]   overflow-y-scroll w-[720px] max-w-full">
         <ul className="relative min-h-[12px] pr-[73px]">
           <li className="relative -top-[2px] float-left ">
@@ -16,7 +16,7 @@ export default function Navigation() {
               <img src={close.src} alt="Close Icon" />
             </a>
           </li>
-          <li className="absolute mt-[9px]">
+          <li className="absolute mt-[9px] left-[49%]">
             <a href="#">
               <img src={navLogo.src} alt="Close Icon" />
             </a>
