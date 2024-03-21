@@ -13,6 +13,9 @@
       ],
       "@constants/*": [
         "src/constants/*"
+      ],
+      "@constants": [
+        "src/constants/index"
       ]
     },
     "jsx": "react-jsx",

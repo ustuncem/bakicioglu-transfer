@@ -4,21 +4,27 @@ import close from '@assets/img/close_x.png';
 import navLogo from '@assets/img/logowhite.png';
 import web from '@assets/img/web.png';
 
+import {HEADER_HEIGHT} from '@constants';
+
+import NavigationToggle from './NavigationToggle';
+
 export default function Navigation() {
   const [show, setShow] = useState(false);
 
   const toggleNavigation = () => setShow(prev => !prev);
 
-  console.log(show);
-
   return (
     <>
-      <button
-        onClick={toggleNavigation}
-        class={`relative h-[30px] w-10 cursor-pointer before:content-[''] before:w-10 before:top-1 before:h-[1px] before:bg-white before:absolute before:left-0 after:content-[''] after:w-9 after:bottom-1 after:h-[1px] after:bg-white after:absolute after:left-0`}
+      <NavigationToggle show={show} toggleNavigation={toggleNavigation} />
+      <div
+        className={`fixed left-0 right-0 transition-all duration-200  bg-red-400 ${show ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+        style={{
+          height: `calc(100dvh - ${HEADER_HEIGHT}px)`,
+          top: `${HEADER_HEIGHT}px`,
+        }}
       >
-        <span class="w-10 h-[1px] bg-white absolute top-[15px] left-0"></span>
-      </button>
+        <p>TEST</p>
+      </div>
 
       {/* <nav class="fixed top-0 left-0 w-full h-[100vh] inline-block transition-all visible opacity-100 z-[9999999] bg-black/90"> */}
       {/* <div class="fixed pt-[30px] pb-[50px] pl-4 h-full bg-[#1e1e1e]  z-[100] opacity-100 visible  overflow-y-scroll w-[720px] max-w-full">

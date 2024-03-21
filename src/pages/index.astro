@@ -1,6 +1,8 @@
 ---
 import '../styles/base.css';
 import Layout from '@layouts/Layout.astro';
+
+const test = () => alert("MERHABA")
 ---
 
-<Layout title="Welcome to Astro." />
+<Layout title="Welcome to Astro."><button onclick="test()" class="mt-52">DENEME</button></Layout>
