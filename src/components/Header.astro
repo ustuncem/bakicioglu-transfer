@@ -1,19 +1,16 @@
 ---
 import {Image} from 'astro:assets';
 import Navigation from './Navigation';
+import 
 
 import logo from '@assets/img/logo.png';
 ---
 
 <header
-  class="absolute bg-black top-0 left-0 w-full z-50 py-5 px-4 transition-all md:pl-16 md:pr-12"
+  style=`height: ${HEADER_HEIGHT}px;`
+  class="absolute bg-black top-0 left-0 w-full z-50 px-4 transition-all md:pl-16 md:pr-12"
 >
   <div class="flex justify-between items-center h-full">
-    <div
-      class="relative h-[30px] w-10 cursor-pointer before:content-[''] before:w-10 before:top-1 before:h-[1px] before:bg-white before:absolute before:left-0 after:content-[''] after:w-9 after:bottom-1 after:h-[1px] after:bg-white after:absolute after:left-0"
-    >
-      <span class="w-10 h-[1px] bg-white absolute top-[15px] left-0"></span>
-    </div>
     <Navigation client:load />
     <div class="mx-auto">
       <a href="/">
