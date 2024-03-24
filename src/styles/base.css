@@ -10,4 +10,14 @@
 }
 
 @layer components {
+  .nav-link {
+    @apply mb-5;
+  }
+  .nav-placeholder {
+    @apply cursor-pointer text-[#969696] text-4xl block relative pl-5 transition-all duration-300 ease-in-out hover:text-white;
+  }
+
+  .nav-placeholder:hover:before {
+    @apply content-[''] absolute h-8 w-[1px] top-[6px] -left-[1px] bg-white;
+  }
 }

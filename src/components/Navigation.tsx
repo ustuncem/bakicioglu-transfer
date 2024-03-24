@@ -1,8 +1,5 @@
 import {useState} from 'preact/hooks';
-
-import close from '@assets/img/close_x.png';
-import navLogo from '@assets/img/logowhite.png';
-import web from '@assets/img/web.png';
+import NavigationLink from './NavigationLink';
 
 import {HEADER_HEIGHT} from '@constants';
 
@@ -17,13 +14,19 @@ export default function Navigation() {
     <>
       <NavigationToggle show={show} toggleNavigation={toggleNavigation} />
       <div
-        className={`fixed left-0 right-0 transition-all duration-200  bg-red-400 ${show ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+        className={`fixed left-0 right-0 transition-all duration-200  bg-[#1e1e1e] ${show ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
         style={{
           height: `calc(100dvh - ${HEADER_HEIGHT}px)`,
           top: `${HEADER_HEIGHT}px`,
         }}
       >
-        <p>TEST</p>
+        <NavigationLink path="/" placeholder="Anasayfa" />
+        <NavigationLink path="/" placeholder="Kurumsal" />
+        <NavigationLink path="/" placeholder="Hizmetlerimiz" />
+        <NavigationLink path="/" placeholder="Araç Filomuz" />
+        <NavigationLink path="/" placeholder="Blog" />
+        <NavigationLink path="/" placeholder="SSS" />
+        <NavigationLink path="/" placeholder="İletişim" />
       </div>
 
       {/* <nav class="fixed top-0 left-0 w-full h-[100vh] inline-block transition-all visible opacity-100 z-[9999999] bg-black/90"> */}
