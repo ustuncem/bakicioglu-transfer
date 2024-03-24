@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT:'7d7c7d',
-          50:  '#ffffff',
+          DEFAULT: '7d7c7d',
+          50: '#ffffff',
           100: '#e5e5e5',
           200: '#cbcbcb',
           300: '#b1b0b1',
@@ -19,8 +19,8 @@ module.exports = {
           950: '#000000',
         },
         secondary: {
-          DEFAULT:'#915a21',
-          50:  '#ffffff',
+          DEFAULT: '#915a21',
+          50: '#ffffff',
           100: '#e9ded3',
           200: '#d3bda6',
           300: '#bd9c7a',
@@ -32,10 +32,10 @@ module.exports = {
           900: '#1d1207',
           950: '#000000',
         },
-        
       },
       fontFamily: {
         primary: ['Montserrat', 'sans-serif'],
+        secondary: ['Dosis', 'sans-serif'],
       },
     },
   },

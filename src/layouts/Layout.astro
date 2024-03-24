@@ -1,5 +1,6 @@
 ---
 import Header from '@components/Header.astro';
+import Info from '@components/Info.astro';
 
 interface Props {
   title: string;
@@ -19,6 +20,12 @@ const {title} = Astro.props;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
       media="print"
@@ -29,5 +36,6 @@ const {title} = Astro.props;
   <body>
     <Header />
     <slot />
+    <Info title="Our Service" description="Our aim is to fill a gap in niche market of Trade" />
   </body>
 </html>
