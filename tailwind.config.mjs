@@ -3,6 +3,21 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
+      animation: {
+        fade: 'fadeInUp 0.4s both', // Define your custom animation name and properties
+      },
+      keyframes: {
+        fadeInUp: {
+          '0%': {
+            opacity: 0,
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            opacity: 1,
+            transform: 'translateY(0)',
+          },
+        },
+      },
       colors: {
         primary: {
           DEFAULT: '7d7c7d',
