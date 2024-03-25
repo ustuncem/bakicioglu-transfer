@@ -1,8 +1,20 @@
 ---
-import '../styles/base.css';
 import Layout from '@layouts/Layout.astro';
+import Info from '@components/Info.astro';
+import Divider from '@components/Divider.astro';
+import ServiceCard from '@components/ServiceCard';
 
-const test = () => alert("MERHABA")
+import '../styles/base.css';
+const test = () => alert('MERHABA');
 ---
 
-<Layout title="Welcome to Astro."><button onclick="test()" class="mt-52">DENEME</button></Layout>
+<Layout title="Welcome to Astro.">
+  <div class="h-96"></div>
+  <Info title="Our Service" description="Our aim is to fill a gap in niche market of Trade" />
+  <ServiceCard client:load />
+  <Divider />
+  <Info
+    title="The Prodrive Fleet"
+    description="We also take custom orders and will help you acquire a specific yacht"
+  />
+</Layout>
