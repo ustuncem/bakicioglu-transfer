@@ -29,18 +29,7 @@ export default function ServiceCard() {
               Limousine Service
             </a>
           </li>
-          <li class=" align-baseline mb-6 active:opacity-100">
-            <a
-              href="#"
-              className={`grid justify-items-center font-secondary text-black font-light text-2xl ${
-                activeService === 2 ? 'opacity-100' : 'opacity-30'
-              } hover:transition-all hover:duration-300 hover:ease-in-out`}
-              onClick={e => toggleActive(e, 2)}
-            >
-              <img className="h-auto max-w-full pb-4" src={plane.src} alt="Plane Icon" />
-              Driver Icon
-            </a>
-          </li>
+
           <li class="align-baseline mb-6 active:opacity-100">
             <a
               href="#"
@@ -50,6 +39,19 @@ export default function ServiceCard() {
               onClick={e => toggleActive(e, 3)}
             >
               <img className="h-auto max-w-full pb-4" src={driver.src} alt="Driver Icon" />
+              Chauffeur Service
+            </a>
+          </li>
+          <li class=" align-baseline mb-6 active:opacity-100">
+            <a
+              href="#"
+              className={`grid justify-items-center font-secondary  text-black font-light text-2xl ${
+                activeService === 2 ? 'opacity-100' : 'opacity-30'
+              } hover:transition-all hover:duration-300 hover:ease-in-out`}
+              onClick={e => toggleActive(e, 2)}
+            >
+              {' '}
+              <img className="h-auto max-w-full pb-4" src={plane.src} alt="Plane Icon" />
               Airport Transfers
             </a>
           </li>
@@ -60,12 +62,12 @@ export default function ServiceCard() {
           <div id="1" className="visible animate-fade">
             <div className="mb-8 text-center font-secondary font-normal align-top">
               <p className="text-[#bf9c60] text-xl leading-6">The exclusive way to travel</p>
-              <p className="text-[#969696]">
+              <p className="text-[#969696] leading-7">
                 Enjoy the comfort of our limousines and business vans. Prepare for your next
                 business meeting in peace, or let your chauffeur show you the highlights of the
                 city.
               </p>
-              <p className="text-[#969696]">
+              <p className="text-[#969696] leading-7">
                 However you may spend your time – you can fully rely on your chauffeur, stay
                 relaxed, and reach your destination safely. Step right in and sit back. We will take
                 care of everything else.

@@ -2,21 +2,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@assets/*": [
-        "src/assets/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@constants/*": [
-        "src/constants/*"
-      ],
-      "@constants": [
-        "src/constants/index"
-      ]
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@constants/*": ["src/constants/*"],
+      "@constants": ["src/constants/index"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "preact"

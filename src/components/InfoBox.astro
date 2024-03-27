@@ -1,0 +1,40 @@
+---
+import background from '@assets/img/bg-photo.jpg';
+import arrowWhite from '@assets/icon/arrow-white.png';
+import Container from './Container.astro';
+---
+
+<section
+  id="infobox"
+  class="py-10 md:py-36 text-center relative bg-fixed w-full bg-no-repeat"
+  style={`background-image: url(${background.src}); background-position: 50% 0px;`}>
+  <Container>
+    <div>
+      <p class="font-secondary text-white text-3xl md:text-[60px] leading-[60px]"
+        >Or anywhere you need us to take</p
+      >
+      <p class="font-secondary text-white font-light text-xl mx-auto my-8">
+        Not only taking to night parties, weddings, casinos, birthdays but we also take you to
+        anywhere you want to go.
+      </p>
+      <p class="font-secondary text-2xl text-[#d7d2bd] mb-6"
+        ><a href="tel:">Call Now (1)-212-333-4343</a></p
+      >
+      <div class="flex justify-center items-center">
+        <a
+          class="flex justify-center items-center transition-all duration-300 ease-in-out bg-[#bf9c60] hover:bg-transparent hover:border-2 hover:border-[#bf9c60] font-secondary text-white py-2 px-8 rounded-md"
+          href="#"
+          >Online Booking
+          <img
+            src={arrowWhite.src}
+            width="19"
+            height="13"
+            alt="Arrow White Icon"
+            class="pl-2"
+            style={{height: '13px', width: '19px'}}
+          />
+        </a>
+      </div>
+    </div>
+  </Container>
+</section>

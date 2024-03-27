@@ -1,15 +1,14 @@
 ---
 import {Image} from 'astro:assets';
 import Navigation from './Navigation';
-import { HEADER_HEIGHT } from '@constants';
+import {HEADER_HEIGHT} from '@constants';
 
 import logo from '@assets/img/logo.png';
 ---
 
 <header
   style=`height: ${HEADER_HEIGHT}px;`
-  class="absolute bg-transparent top-0 left-0 w-full z-50 px-4 transition-all md:pl-16 md:pr-12"
->
+  class="absolute bg-transparent top-0 left-0 w-full z-50 px-4 transition-all md:pl-16 md:pr-12">
   <div class="flex justify-between items-center h-full">
     <Navigation client:load />
     <div class="mx-auto">
